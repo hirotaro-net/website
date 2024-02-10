@@ -1,0 +1,287 @@
+body {
+    width: 100vw;
+    background-color: rgb(243, 243, 243);
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+#body-wrapper {
+    display: block;
+
+    width: 80vw;
+    max-width: 1280px;
+
+    height: auto;
+
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    display: block;
+
+    width: 100%;
+
+    height: 10vh;
+}
+
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1280px;
+
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+.header-column {
+    display: block;
+
+    width: 40%;
+    
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+#header-name {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    width: 100%;
+
+    height: 100%;
+
+    #header-icon-circle {
+        width: 20px;
+
+        height: 20px;
+
+        margin-right: 10px;
+        
+        background   : linear-gradient(to bottom, #59b300, #006600);
+        border-radius: 50%;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        height: 60%;
+
+        margin-right: 15px;
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        height: 60%;
+
+        font-size: 15px;
+    }
+}
+
+#header-nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    height: 100%;
+
+    a {
+        font-size: 20px;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.heder-nav-li-right {
+    margin-right: 30px;
+
+    position: relative;
+
+    ::after {
+        content:"";
+        display:block;
+        width: 1px;
+        height: 100%;
+        background-color:#0097A7;
+        position: absolute;
+        top: 50%;
+        right: -15px;
+        transform: translateY(-50%);
+    }
+}
+
+
+/* END header */
+
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    height: 70vh;
+}
+
+#main-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    width: 60%;
+    max-width: 1280px;
+
+    height: 90%;
+}
+
+#main-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40%;
+
+    height: 100%;
+
+    img {
+        width: 100%;
+        max-width: 400px;
+        
+        height: auto;
+
+        border-radius: 50%;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+}
+
+#main-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+
+    height: 100%;
+
+    #main-description-bio {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+
+        width: 100%;
+
+        height: 60%;
+    }
+
+    h2 {
+        margin: 10px 0;
+
+        font-size: 40px;
+    }
+
+    h3 {
+        margin: 5px 0;
+
+        font-size: 25px;
+    }
+}
+
+/* END main */
+
+/* footer */
+footer {
+    display: block;
+
+    width: 100%;
+
+    height: 20vh;
+
+    position: relative;
+
+    ::after {
+        content: "";
+        display: block;
+
+        width: 80%;
+        max-width: 1280px;
+
+        height: 1px;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background-color:#0097A7;
+    }
+}
+
+#footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    width: 90%;
+    max-width: 1280px;
+
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+.footer-column {
+    display: block;
+
+    width: 20%;
+    height: 100%;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+#footer-nav {
+    display: flex;
+    justify-content: left;
+
+    a {
+        display: block;
+        height: 100%;
+
+        margin-right: 10px;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+/* END footer*/
