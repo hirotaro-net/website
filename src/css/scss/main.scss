@@ -1,5 +1,14 @@
+@import './mixin';
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    width: 100vw;
+    width: 100%;
+
+    height: auto;
+
     background-color: rgb(243, 243, 243);
 
     font-family: 'Noto Sans', sans-serif;
@@ -57,6 +66,10 @@ header {
     height: 100%;
 
     margin: 0 auto;
+
+    @include tab {
+        width: auto;
+    }
 }
 
 #header-name {
@@ -117,6 +130,38 @@ header {
     i {
         margin-right: 5px;
     }
+
+    @include tab {
+        display: none;
+    }
+}
+
+#header-nav-tab {
+    display: none;
+    justify-content: right;
+    align-items: center;
+
+    height: 100%;
+
+    a {
+        font-size: 20px;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+
+    @include tab {
+        display: flex;
+
+        i {
+            margin-right: 0px;
+        }
+    }
+
+    @include sp-small {
+        display: none;
+    }
 }
 
 .heder-nav-li-right {
@@ -159,6 +204,17 @@ main {
     max-width: 1280px;
 
     height: 90%;
+
+    @include tab {
+        width: 80%;
+    }
+
+    @include sp {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 #main-picture {
@@ -200,6 +256,8 @@ main {
         width: 100%;
 
         height: 60%;
+
+        
     }
 
     h2 {
@@ -213,6 +271,20 @@ main {
 
         font-size: 25px;
     }
+
+    @include pc {
+        h2 {
+            font-size: 30px
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    @include sp {
+        width: 80%;
+    }
 }
 
 /* END main */
@@ -223,7 +295,7 @@ footer {
 
     width: 100%;
 
-    height: 20vh;
+    min-height: 20vh;
 
     position: relative;
 
@@ -252,9 +324,15 @@ footer {
     width: 90%;
     max-width: 1280px;
 
-    height: 100%;
+    height: 20vh;
 
     margin: 0 auto;
+
+    @include tab {
+        flex-wrap: wrap;
+
+        width: 80%;
+    }
 }
 
 .footer-column {
@@ -262,6 +340,16 @@ footer {
 
     width: 20%;
     height: 100%;
+
+    @include tab {
+        width: 50%;
+    }
+
+    @include sp-small {
+        width: 100%;
+
+        height: 50%;
+    }
 }
 
 .footer-card {
@@ -270,6 +358,8 @@ footer {
     flex-direction: column;
 
     height: 100%;
+
+    margin: 0 auto;
 }
 
 #footer-nav {
