@@ -1,0 +1,464 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Nosutaru-dotMPlusH-10-Regular";
+  src: url("../font/Nosutaru-dotMPlusH-10-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  background: fixed;
+  background-image: linear-gradient(0deg, transparent 44px, #333 45px), linear-gradient(90deg,  transparent 44px, #333 45px);
+  background-size: 45px 45px;
+
+  font-family: "Nosutaru-dotMPlusH-10-Regular", serif;
+  font-optical-sizing: auto;
+
+  color: #333333;
+
+  user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+
+  position: relative;
+}
+
+a {
+  color: #333333;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/* header */
+
+header {
+  width: 100%;
+}
+
+#header-content {
+  padding: 30px 0;
+}
+
+/* END header */
+
+/* main */
+
+main {
+  width: 100%;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+.main-content {
+  min-height: 500px;
+
+  padding: 20px 0;
+}
+
+.main-content-title {
+  padding: 20px 0;
+}
+
+.main-content-title h2 {
+  text-align: center;
+}
+
+.main-content-title h2::before {
+  content: "<"
+}
+
+.main-content-title h2::after {
+  content: ">"
+}
+
+.main-content-card {
+  width: 300px;
+  height: 400px;
+
+  margin: 30px 0;
+
+  background-color: #f5f5f7;
+
+  border-radius: 1rem;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.main-content-card h3 {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content-card p {
+  padding: 20px;
+
+  position: relative;
+}
+
+.main-content-card p::before {
+  content: "";
+  
+  display: block;
+  width: 50%;
+  height: 2px;
+
+  background-color: black;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(50%);
+}
+
+.main-content-card-image {
+  width: 100%;
+  text-align: center;
+}
+
+.main-content-card-image img {
+  display: block;
+  
+  width: 150px;
+  height: auto;
+
+  margin: 0 auto;
+  padding: 20px 0;
+  
+  border-radius: 50%;
+}
+
+.main-content-card-image i {
+  font-size: 150px;
+
+  padding: 20px 0;
+}
+
+.main-content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  width: 100%;
+  min-height: 150px;
+
+  margin: 20px 0;
+}
+
+.main-content-row-icon {
+  width: 90%;
+  max-width: 200px;
+
+  margin: 0 auto;
+  
+  text-align: center;
+}
+
+.main-content-row-icon i {
+  font-size: 50px;
+}
+
+.main-content-row-descritpion {
+  width: 350px;
+
+  margin: 0 auto;
+}
+
+#cover-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cover-content img {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}
+
+#intro-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#works-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+#messages {
+  background-color: #1185fe;
+  color: white;
+}
+
+#messages-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+#messages-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 300px;
+
+  padding: 20px 0;
+}
+
+#messages-text p {
+  padding: 10px 0;
+}
+
+/* END main */
+
+/* footer */
+
+footer {
+  width: 100%;
+
+  background-color: #f5f5f7;
+}
+
+#footer-content {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer-content h1 {
+  padding: 10px 0;
+}
+
+#footer-copyright {
+  padding: 10px 0;
+
+  text-align: center;
+}
+
+#footer-copyright p {
+  padding: 10px 0;
+}
+
+#footer-copyright i {
+  color: #f00000;
+}
+
+/* END footer */
+
+/* Bitcoin card */
+
+#bitcoin-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+
+  user-select: text;
+
+  visibility: hidden;
+}
+
+#bitcoin-card-content {
+  width: 50%;
+  max-width: 800px;
+  min-height: 350px;
+
+  position: relative;
+
+  background-color: #f5f5f7;
+
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+  border-radius: 1rem;
+}
+
+#bitcoin-card-content h1 {
+  padding: 20px;
+}
+
+#bitcoin-card-content p {
+  padding: 20px;
+  text-align: center;
+  line-break: anywhere;
+}
+
+#bitcoin-card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+#bitcoin-card-image img {
+  width: 50%;
+
+  padding: 20px 0;
+}
+
+#bitcoin-card-close {
+  position: absolute;
+
+  right: 0;
+  top: 0;
+}
+
+#bitcoin-card-close button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+
+  font-size: 30px;
+}
+
+/* END Bitcoin card */
+
+/* Icon menu */
+
+.icon-menu {
+  width: 90%;
+  max-width: 400px;
+  
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.icon-menu > h2 {
+  text-align: center;
+}
+
+.icon-menu > ul {
+  display: flex;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+  
+  padding: 15px 0;
+
+  list-style: none;
+}
+
+.icon-menu li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100px;
+}
+
+.icon-menu a {
+  text-decoration: none;
+}
+
+.icon-menu i {
+  font-size: 30px;
+}
+
+.icon-menu p {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto;
+
+  border-radius: 50%;
+  color: white;
+}
+
+#cover-menu-bluesky {
+  background-color: #1185fe;
+}
+
+#cover-menu-linkedin {
+  background-color: #0077b5;
+}
+
+#cover-menu-instagram {
+  background-color: #e1306c;
+}
+
+#footer-menu-home {
+  background-color: #4285f4;
+}
+
+#footer-menu-mail {
+  background-color: #ffc0cb;
+}
+
+#footer-menu-phone {
+  background-color: #4db56a;
+}
+
+#footer-menu-pgp {
+  background-color: #f4b400;
+}
+
+#footer-menu-bitcoin {
+  background-color: #f7931a;
+}
+
+#footer-menu-patreon {
+  background-color: #052d49;
+}
+
+/* END Icon menu */
+
+/* Bluesky Widget */
+
+bsky-widget {
+  min-height: 370px;
+  width: 300px;
+}
+
+/* END Bluesky Widget */
