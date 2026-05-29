@@ -390,8 +390,10 @@ footer {
   width: 100px;
 }
 
-.icon-menu a {
+.icon-menu a,
+.icon-menu button {
   text-decoration: none;
+  color: inherit;
 }
 
 .icon-menu i {
