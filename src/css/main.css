@@ -2,6 +2,7 @@
 @font-face {
   font-family: "Nosutaru-dotMPlusH-10-Regular";
   src: url("../font/Nosutaru-dotMPlusH-10-Regular.ttf");
+  font-display: swap;
 }
 
 * {

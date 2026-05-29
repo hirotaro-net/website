@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./src/css/main.css" />
 
     <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/a772d9e2e5.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="./src/font/Nosutaru-dotMPlusH-10-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <script src="https://kit.fontawesome.com/a772d9e2e5.js" crossorigin="anonymous" defer></script>
   </head>
   <body id="body">
     <header>
@@ -25,7 +26,7 @@
       <div id="cover">
         <div class="wrapper">
           <div id="cover-content" class="main-content">
-            <img src="./src/img/icon.png" alt="site image" />
+            <img src="./src/img/icon.png" alt="site image" fetchpriority="high" />
           </div>
           <menu id="cover-menu" class="icon-menu">
             <h2>Social Media</h2>
@@ -243,7 +244,7 @@
         <h1>Bitcoin</h1>
         <p>bc1qnlgzug6nsuajd7jqjfs8jl9ph5dzyhc7kygmzg</p>
         <div id="bitcoin-card-image">
-          <img src="./src/img/bitcoin.svg" alt="Bitcoin address QR code" />
+          <img src="./src/img/bitcoin.svg" alt="Bitcoin address QR code" loading="lazy" />
         </div>
         <div id="bitcoin-card-close">
           <button onclick="closeBitcoinCard()"><i class="fa-regular fa-circle-xmark"></i></button>
